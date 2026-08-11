@@ -39,7 +39,6 @@ function JoinCreateChat() {
       //joinChat
       try {
         const response = await joinChatApi(detail.roomId);
-        console.log(response);
         toast.success("Joined room successfully!");
         setCurrentUser(detail.userName);
         setRoomId(detail.roomId);
@@ -60,7 +59,6 @@ function JoinCreateChat() {
       console.log("create room" + detail.roomId);
       try {
         const response = await createRoomApi(detail.roomId);
-        console.log(response);
         toast.success("Room created successfully!");
         setCurrentUser(detail.userName);
         setRoomId(detail.roomId);

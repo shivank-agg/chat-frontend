@@ -28,7 +28,6 @@ function ChatPage() {
     async function loadMessages() {
       try {
         const messagesHere = await getMessages(roomId);
-        console.log(messagesHere);
         setMessages(messagesHere);
       } catch (err) {
         console.error("Failed to load messages", err);
