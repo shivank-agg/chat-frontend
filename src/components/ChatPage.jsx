@@ -75,7 +75,7 @@ function ChatPage() {
       stompClient.send(
         `/app/sendMessage/${roomId}`,
         {},
-        JSON.stringify(message)
+        JSON.stringify(message),
       );
       setInput("");
     }
@@ -144,7 +144,7 @@ function ChatPage() {
               <div className="flex flex-row gap-2">
                 <img
                   className="h-10 w-10"
-                  src={"https://avatar.iran.liara.run/public/8"}
+                  src={"https://avatarapi.runflare.run/public/boy"}
                 ></img>
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-bold">{message.sender}</p>
