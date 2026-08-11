@@ -1,4 +1,3 @@
-import "./App.css";
 import JoinCreateChat from "./components/JoinCreateChat";
 import { BASE_URL } from "./config/AxiosHelper";
 
